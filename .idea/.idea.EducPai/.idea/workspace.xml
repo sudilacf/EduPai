@@ -15,31 +15,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c92a632b-8a23-4375-9b60-48f30d09d536" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/WebApplication1/Data/ApplicationDbContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication1/Entities/BalanceEntry.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication1/Entities/Payment.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication1/Entities/PaymentAllocation.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication1/Entities/Receipt.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication1/Entities/School.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication1/Entities/SchoolAdminInvitation.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication1/Entities/SchoolMember.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication1/Entities/SchoolPaymentConfiguration.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication1/Entities/Student.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication1/Entities/StudentSchoolAccount.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication1/Enums/BalanceEntryType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication1/Enums/PaymentStatus.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication1/Enums/SchoolMemberRole.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication1/Enums/SchoolStatus.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication1/Enums/StudentSchoolAccountStatus.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication1/Enums/StudentVerificationStatus.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication1/Identity/ApplicationUser.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplication1/Contracts/IAuthService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplication1/Controllers/AuthController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplication1/Services/AuthService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplication1/ViewModels/LoginViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplication1/ViewModels/RegisterViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplication1/Views/Auth/Login.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplication1/Views/Auth/Register.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplication1/Views/Shared/_AuthLayout.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplication1/wwwroot/css/auth.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EducPai/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EducPai/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Controllers/HomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/Models/ErrorViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/ViewModels/ErrorViewModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication1/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/Views/Shared/Error.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Views/Shared/Error.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/Views/_ViewImports.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Views/_ViewImports.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/WebApplication1.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/WebApplication1.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Properties/launchSettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication1/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/appsettings.Development.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,20 +38,33 @@
     <option name="firstShow" value="false" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="24" />
+    <option name="cachedIndexableFilesCount" value="33" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="feature" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/WebApplication1/Contexts/ApplicationDbContext.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WebApplication1/Controllers/AccountController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication1/Constants/Roles.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication1/Contracts/IAuthService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication1/Controllers/AuthController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication1/Data/Seed/DatabaseSeedOption.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication1/Data/Seed/DatabaseSeeder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication1/Entities/BalanceEntry.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication1/Entities/Payment.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication1/Entities/PaymentAllocation.cs" root0="FORCE_HIGHLIGHTING" />
@@ -72,10 +72,12 @@
     <setting file="file://$PROJECT_DIR$/WebApplication1/Entities/SchoolAdminInvitation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication1/Entities/SchoolPaymentConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication1/Entities/StudentSchoolAccount.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WebApplication1/Models/ApplicationUser.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WebApplication1/Models/School.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WebApplication1/Models/SchoolMember.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WebApplication1/Models/Student.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication1/Services/AuthService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication1/ViewModels/RegisterViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication1/Views/Auth/Login.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication1/Views/Auth/Register.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication1/Views/Shared/_AuthLayout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../NazgModServer/NazgModServer/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e52a70dae11948fa5bfb33d03fd2e7d9b6ece182647aa4d9b1221413ac57dc7/IdentityUser.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="McpProjectServerCommands">
@@ -85,61 +87,61 @@
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="3.817289370671038E-48" />
-      <entry key="MS500" value="3.283605818833197E-10" />
-      <entry key="S2" value="0.004256844188337943" />
-      <entry key="S5" value="0.11262694033417543" />
-      <entry key="S10" value="0.3371139149135002" />
-      <entry key="S30" value="0.9180538653329114" />
-      <entry key="S60" value="2.1802341060572243" />
-      <entry key="M2" value="6.845108227065798" />
-      <entry key="M5" value="24.22304680046025" />
-      <entry key="M10" value="45.03551754796195" />
-      <entry key="M15" value="58.84580130188187" />
-      <entry key="M30" value="83.23616550629119" />
-      <entry key="H1" value="104.75988908414172" />
-      <entry key="H2" value="121.02509408033085" />
-      <entry key="H4" value="135.4754260787154" />
-      <entry key="D1" value="166.16422563612204" />
-      <entry key="W1" value="176.11487557064376" />
+      <entry key="MS100" value="5.046995355859558E-8" />
+      <entry key="MS500" value="0.03472214777047167" />
+      <entry key="S2" value="0.4316697792872058" />
+      <entry key="S5" value="0.714596127062409" />
+      <entry key="S10" value="0.8453378774563511" />
+      <entry key="S30" value="0.9455334928220824" />
+      <entry key="S60" value="0.9729388638691" />
+      <entry key="M2" value="1.0096558136210563" />
+      <entry key="M5" value="1.2828942133617822" />
+      <entry key="M10" value="2.9105478032736016" />
+      <entry key="M15" value="6.747623202917888" />
+      <entry key="M30" value="26.75965372115854" />
+      <entry key="H1" value="66.98792542300818" />
+      <entry key="H2" value="112.9596525896679" />
+      <entry key="H4" value="152.45655381671213" />
+      <entry key="D1" value="213.73749444146085" />
+      <entry key="W1" value="230.8308061539437" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0000485080461512" />
-      <entry key="S2" value="1.102848057288198" />
-      <entry key="S5" value="1.6987674727919644" />
-      <entry key="S10" value="2.592808280064218" />
-      <entry key="S30" value="5.1766888857237845" />
-      <entry key="S60" value="9.072836651084064" />
-      <entry key="M2" value="18.421467474579103" />
-      <entry key="M5" value="41.50354536641896" />
-      <entry key="M10" value="61.440848615395026" />
-      <entry key="M15" value="72.02472430870692" />
-      <entry key="M30" value="86.62839096678134" />
-      <entry key="H1" value="96.44052762070146" />
-      <entry key="H2" value="102.51870776920128" />
-      <entry key="H4" value="106.95101507218436" />
-      <entry key="D1" value="115.02110632196604" />
-      <entry key="W1" value="117.52752099544841" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0000000000000002" />
+      <entry key="S30" value="1.0000159054442814" />
+      <entry key="S60" value="1.0089006912205578" />
+      <entry key="M2" value="1.210864498462401" />
+      <entry key="M5" value="2.4396007687449766" />
+      <entry key="M10" value="4.350504409374899" />
+      <entry key="M15" value="7.047895609225333" />
+      <entry key="M30" value="20.80786153245181" />
+      <entry key="H1" value="48.0030012747205" />
+      <entry key="H2" value="77.38627451066677" />
+      <entry key="H4" value="100.22206055488294" />
+      <entry key="D1" value="128.952700359925" />
+      <entry key="W1" value="135.77573540793514" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.025737219289611663" />
-      <entry key="MS500" value="0.4809929286548523" />
-      <entry key="S2" value="0.9248642394926319" />
-      <entry key="S5" value="1.6816605429499933" />
-      <entry key="S10" value="2.8148757703672644" />
-      <entry key="S30" value="5.98828256887181" />
-      <entry key="S60" value="11.112535505723656" />
-      <entry key="M2" value="25.066183266333784" />
-      <entry key="M5" value="65.51198485474963" />
-      <entry key="M10" value="106.30629448346252" />
-      <entry key="M15" value="130.73294748493956" />
-      <entry key="M30" value="169.77801368380852" />
-      <entry key="H1" value="201.15093670703385" />
-      <entry key="H2" value="223.51705443932084" />
-      <entry key="H4" value="242.412192392415" />
-      <entry key="D1" value="281.18262293273165" />
-      <entry key="W1" value="293.64199347853986" />
+      <entry key="MS100" value="0.002489376299422126" />
+      <entry key="MS500" value="0.3108723305765242" />
+      <entry key="S2" value="1.0525189649756208" />
+      <entry key="S5" value="1.5141974074126474" />
+      <entry key="S10" value="1.7337651034970434" />
+      <entry key="S30" value="1.9054259324486755" />
+      <entry key="S60" value="1.9612079087800147" />
+      <entry key="M2" value="2.20749057028341" />
+      <entry key="M5" value="3.7093044884800057" />
+      <entry key="M10" value="7.247957181580877" />
+      <entry key="M15" value="13.781176211548564" />
+      <entry key="M30" value="47.546306712957524" />
+      <entry key="H1" value="114.96615452743632" />
+      <entry key="H2" value="190.32570872025423" />
+      <entry key="H4" value="252.66529111891" />
+      <entry key="D1" value="342.68718762161916" />
+      <entry key="W1" value="366.60608145797147" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -166,6 +168,7 @@
     &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;feature&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -222,6 +225,10 @@
       <updated>1792851136228</updated>
       <workItem from="1792851136905" duration="11600000" />
       <workItem from="1792892672423" duration="1079000" />
+      <workItem from="1792893911264" duration="1201000" />
+      <workItem from="1792895139818" duration="9000" />
+      <workItem from="1792895157711" duration="10000" />
+      <workItem from="1792895190300" duration="4114000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -239,7 +246,15 @@
       <option name="project" value="LOCAL" />
       <updated>1792851918761</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add: Database seeding with roles">
+      <option name="closed" value="true" />
+      <created>1792897339434</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1792897339434</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,7 +289,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="initial commit" />
     <MESSAGE value="chore: project creation" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: project creation" />
+    <MESSAGE value="add: Database seeding with roles" />
+    <option name="LAST_COMMIT_MESSAGE" value="add: Database seeding with roles" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

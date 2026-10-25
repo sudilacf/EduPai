@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/auth.css" asp-append-version="true" />
+</head>
+<body class="auth-body">
+    <div class="auth-shell">
+
+        <!-- Brand panel (hidden on small screens) -->
+        <aside class="auth-brand">
+            <div class="brand-logo">
+                <span class="brand-mark">E</span>
+                <span class="brand-name">EducPai</span>
+            </div>
+
+            <div class="brand-middle">
+                <h1>Tuition payments,<br />made simple.</h1>
+                <p>EducPai connects students and schools in one secure place, so paying and tracking tuition never feels like a chore.</p>
+
+                <ul class="brand-points">
+                    <li>
+                        <span class="point-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </span>
+                        <div><strong>Secure by design</strong><span>Your account and payment records stay protected.</span></div>
+                    </li>
+                    <li>
+                        <span class="point-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+                        </span>
+                        <div><strong>Pay your school directly</strong><span>No more long lines at the cashier.</span></div>
+                    </li>
+                    <li>
+                        <span class="point-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+                        </span>
+                        <div><strong>Track every payment</strong><span>Clear status for students and school staff.</span></div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="brand-bottom">&copy; @DateTime.Now.Year EducPai. All rights reserved.</div>
+        </aside>
+
+        <!-- Form panel -->
+        <main class="auth-main">
+            <div class="auth-mobile-logo">
+                <span class="brand-mark">E</span>
+                <span class="brand-name">EducPai</span>
+            </div>
+            @RenderBody()
+        </main>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        function togglePassword(id, btn) {
+            var input = document.getElementById(id);
+            if (!input) return;
+            var show = input.type === "password";
+            input.type = show ? "text" : "password";
+            btn.textContent = show ? "Hide" : "Show";
+            btn.setAttribute("aria-pressed", show ? "true" : "false");
+        }
+    </script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
